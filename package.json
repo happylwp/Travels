@@ -13,7 +13,6 @@
   "dependencies": {
     "dva-core": "^1.3.0",
     "lodash": "^4.17.10",
-    "lottie-react-native": "^2.5.0",
     "react": "^16.4.1",
     "react-native": "^0.55.4",
     "react-native-cached-image": "^1.4.3",

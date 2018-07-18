@@ -12,11 +12,11 @@ import {
 } from 'react-navigation-redux-helpers'
 import { connect } from 'react-redux'
 
-import Loading from './routes/Loading'
-import Login from './routes/Login'
-import Home from './routes/Home'
-import Account from './routes/Account'
-import Detail from './routes/Detail'
+import Loading from './Screen/Loading'
+import Login from './Screen/Login'
+import Home from './Screen/Home'
+import Account from './Screen/Account'
+import Detail from './Screen/Detail'
 
 const HomeNavigator = createBottomTabNavigator({
   Home: { screen: Home },

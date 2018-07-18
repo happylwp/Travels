@@ -42,7 +42,6 @@
 		2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		6B6ECBF2A67448CFB54A1A3E /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 794BB5876ED2430CB78ADFDA /* Foundation.ttf */; };
-		6BBDA976094E4E2ABA0EF49B /* libLottieReactNative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A892975610A24D3CBA7A3FF4 /* libLottieReactNative.a */; };
 		77A7B8B0896D4025A0F63333 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B98A65486AE04DAE9A204B9B /* Entypo.ttf */; };
 		7AC60220EF264BC78A8170FA /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 70618D70DFC642FE996AF9E7 /* Zocial.ttf */; };
 		7D215890EA31436BA9747D6C /* libimageCropPicker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5135B0FBE1DA4232B9122CF1 /* libimageCropPicker.a */; };
@@ -318,13 +317,6 @@
 			remoteGlobalIDString = 3400A8081CEB54A6008A0BC7;
 			remoteInfo = imageCropPicker;
 		};
-		61611E8720FE226D008FD2C5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F210D13AC55A4AC7BBC69385 /* LottieReactNative.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 11FA5C511C4A1296003AC2EE;
-			remoteInfo = LottieReactNative;
-		};
 		61611E8A20FE226D008FD2C5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6A91D4385FA84C5DAE4C0A07 /* RCTBEEPickerManager.xcodeproj */;
@@ -427,13 +419,11 @@
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		8716D727E2B548C9916C51BC /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
 		96E3D8FB496149F28CA69104 /* libRNDeviceInfo-tvOS.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = "libRNDeviceInfo-tvOS.a"; sourceTree = "<group>"; };
-		A892975610A24D3CBA7A3FF4 /* libLottieReactNative.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libLottieReactNative.a; sourceTree = "<group>"; };
 		A97177515B3F43B6B3FC70CF /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
 		ACDD3713D6334F20B9EE1336 /* libRCTBEEPickerManager.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTBEEPickerManager.a; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		B98A65486AE04DAE9A204B9B /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
 		EA26DFAB5F4C47E1828444AF /* libReactNativePermissions.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libReactNativePermissions.a; sourceTree = "<group>"; };
-		F210D13AC55A4AC7BBC69385 /* LottieReactNative.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = LottieReactNative.xcodeproj; path = "../node_modules/lottie-react-native/src/ios/LottieReactNative.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -462,7 +452,6 @@
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
-				6BBDA976094E4E2ABA0EF49B /* libLottieReactNative.a in Frameworks */,
 				F3FF326E1A934A0F84CC71F7 /* libRNDeviceInfo.a in Frameworks */,
 				7D215890EA31436BA9747D6C /* libimageCropPicker.a in Frameworks */,
 				B73E64CD110B44FA8D14A8C3 /* libReactNativePermissions.a in Frameworks */,
@@ -652,7 +641,6 @@
 		61611E4F20FE2269008FD2C5 /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
-				A892975610A24D3CBA7A3FF4 /* libLottieReactNative.a */,
 				35AF574BCD854597B8135334 /* libRNDeviceInfo.a */,
 				5135B0FBE1DA4232B9122CF1 /* libimageCropPicker.a */,
 				EA26DFAB5F4C47E1828444AF /* libReactNativePermissions.a */,
@@ -667,14 +655,6 @@
 			isa = PBXGroup;
 			children = (
 				61611E8520FE226D008FD2C5 /* libimageCropPicker.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		61611E7920FE226C008FD2C5 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				61611E8820FE226D008FD2C5 /* libLottieReactNative.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -736,7 +716,6 @@
 				832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */,
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
-				F210D13AC55A4AC7BBC69385 /* LottieReactNative.xcodeproj */,
 				1795610E0BDB4AF6A701630F /* RNDeviceInfo.xcodeproj */,
 				6CD6BAD7A3EB4E10BAF6550E /* imageCropPicker.xcodeproj */,
 				369301F113E840B09CE17129 /* ReactNativePermissions.xcodeproj */,
@@ -905,10 +884,6 @@
 				{
 					ProductGroup = 61611E7720FE226C008FD2C5 /* Products */;
 					ProjectRef = 6CD6BAD7A3EB4E10BAF6550E /* imageCropPicker.xcodeproj */;
-				},
-				{
-					ProductGroup = 61611E7920FE226C008FD2C5 /* Products */;
-					ProjectRef = F210D13AC55A4AC7BBC69385 /* LottieReactNative.xcodeproj */;
 				},
 				{
 					ProductGroup = 00C302A81ABCB8CE00DB3ED1 /* Products */;
@@ -1229,13 +1204,6 @@
 			fileType = archive.ar;
 			path = libimageCropPicker.a;
 			remoteRef = 61611E8420FE226D008FD2C5 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		61611E8820FE226D008FD2C5 /* libLottieReactNative.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libLottieReactNative.a;
-			remoteRef = 61611E8720FE226D008FD2C5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		61611E8B20FE226D008FD2C5 /* libRCTBEEPickerManager.a */ = {
