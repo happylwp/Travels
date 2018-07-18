@@ -5,15 +5,13 @@ export const appToast = (message, position = 'bottom') => {
   //
   if (position === 'top') {
     p = Toast.positions.TOP
-  }
-  else if (position === 'bottom') {
+  } else if (position === 'bottom') {
     // p = Toast.positions.BOTTOM;
     p = -150
-  }
-  else {
+  } else {
     p = Toast.positions.CENTER
   }
-  let toast = Toast.show(message, {
+  const toast = Toast.show(message, {
     duration: Toast.durations.SHORT,
     position: p,
     shadow: false,
@@ -21,19 +19,19 @@ export const appToast = (message, position = 'bottom') => {
     hideOnPress: true,
     delay: 0,
     onShow: () => {
-      /*calls on toast\`s appear animation start*/
+      /* calls on toast\`s appear animation start */
     },
     onShown: () => {
-      /*calls on toast\`s appear animation end.*/
+      /* calls on toast\`s appear animation end. */
     },
     onHide: () => {
-      /*calls on toast\`s hide animation start.*/
+      /* calls on toast\`s hide animation start. */
     },
     onHidden: () => {
-      /*calls on toast\`s hide animation end.*/
-    }
+      /* calls on toast\`s hide animation end. */
+    },
   })
-  setTimeout(function () {
+  setTimeout(() => {
     Toast.hide(toast)
   }, 2000)
 }
