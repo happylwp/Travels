@@ -28,7 +28,8 @@
     "react-native-vector-icons": "^4.6.0",
     "react-navigation": "^2.5.1",
     "react-navigation-redux-helpers": "^2.0.2",
-    "react-redux": "^5.0.7"
+    "react-redux": "^5.0.7",
+    "rn-fetch-blob": "^0.10.12"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.4",

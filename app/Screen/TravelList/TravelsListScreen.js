@@ -1,12 +1,17 @@
 import React, { PureComponent } from 'react'
-import { View, SafeAreaView, Text } from 'react-native'
+import { View, SafeAreaView, Text, StyleSheet } from 'react-native'
 import { connect } from 'react-redux'
+import { BackColor } from '../../utils/GlobleStyle'
 
 @connect()
 class TravelsListScreen extends PureComponent {
+  static navigationOptions = () => ({
+    title: '',
+  })
+
   render() {
     return (
-      <SafeAreaView>
+      <SafeAreaView style={styles.container}>
         <View>
           <Text>分享消息</Text>
         </View>
@@ -14,5 +19,14 @@ class TravelsListScreen extends PureComponent {
     )
   }
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: BackColor,
+  },
+})
 
 export default TravelsListScreen

@@ -69,7 +69,7 @@ class TabbarComponent extends PureComponent {
               style={{ flex: 1 }}
               activeOpacity={0.9}
               onPress={() => {
-                navigation.navigate('CarListScreen')
+                navigation.navigate('TravelListScreen')
               }}
             >
               <View
@@ -81,7 +81,7 @@ class TabbarComponent extends PureComponent {
                 }}
               >
                 <Icon
-                  name="plane-departure"
+                  name="plane"
                   size={30}
                   color={tavelsListScreenFocused ? ThemeColor : '#615F6B'}
                 />
@@ -166,7 +166,7 @@ class TabbarComponent extends PureComponent {
 
           <TouchableOpacity
             style={{
-              borderRadius: 32,
+              borderRadius: 30,
               height: 64,
               width: 64,
               position: 'absolute',
@@ -177,10 +177,10 @@ class TabbarComponent extends PureComponent {
             }}
             activeOpacity={0.9}
             onPress={() => {
-              navigation.navigate('PublishCarGuideScreen')
+              navigation.navigate('UploadTravelsScreen')
             }}
           >
-            <Icon name="plus-circle" size={30} color={ThemeColor} />
+            <Icon name="plus-circle" size={55} color={ThemeColor} />
           </TouchableOpacity>
         </View>
       </SafeAreaView>

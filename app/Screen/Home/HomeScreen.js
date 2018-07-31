@@ -1,9 +1,14 @@
 import React, { Component } from 'react'
 import { StyleSheet, View, SafeAreaView, Text } from 'react-native'
 import { connect } from 'react-redux'
+import { BackColor } from '../../utils/GlobleStyle'
 
 @connect()
 class HomeScreen extends Component {
+  static navigationOptions = () => ({
+    title: null,
+  })
+
   render() {
     return (
       <SafeAreaView style={styles.container}>
@@ -20,6 +25,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+    backgroundColor: BackColor,
   },
   icon: {
     width: 32,

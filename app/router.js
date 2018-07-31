@@ -1,10 +1,6 @@
 import React, { PureComponent } from 'react'
 import { BackHandler, Animated, Easing } from 'react-native'
-import {
-  createStackNavigator,
-  createBottomTabNavigator,
-  NavigationActions,
-} from 'react-navigation'
+import { createStackNavigator, NavigationActions } from 'react-navigation'
 import {
   reduxifyNavigator,
   createReactNavigationReduxMiddleware,
@@ -14,27 +10,24 @@ import { connect } from 'react-redux'
 
 import Loading from './Screen/Loading'
 import Login from './Screen/Login'
-import Home from './Screen/Home'
-import Account from './Screen/Account'
-import Detail from './Screen/Detail'
+import { TabRouter } from './TabRouter'
 
-const HomeNavigator = createBottomTabNavigator({
-  Home: { screen: Home },
-  Account: { screen: Account },
-})
+// const HomeNavigator = createBottomTabNavigator({
+//   Home: { screen: Home },
+//   Account: { screen: Account },
+// })
 
-HomeNavigator.navigationOptions = ({ navigation }) => {
-  const { routeName } = navigation.state.routes[navigation.state.index]
+// HomeNavigator.navigationOptions = ({ navigation }) => {
+//   const { routeName } = navigation.state.routes[navigation.state.index]
 
-  return {
-    headerTitle: routeName,
-  }
-}
+//   return {
+//     headerTitle: routeName,
+//   }
+// }
 
 const MainNavigator = createStackNavigator(
   {
-    HomeNavigator: { screen: HomeNavigator },
-    Detail: { screen: Detail },
+    HomeNavigator: { screen: TabRouter },
   },
   {
     headerMode: 'float',

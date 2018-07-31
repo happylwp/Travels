@@ -1,4 +1,5 @@
 /*eslint-disable*/
+import React from 'react'
 import { createBottomTabNavigator } from 'react-navigation'
 import { View, Image } from 'react-native'
 import { CachedImage } from 'react-native-cached-image'
@@ -37,7 +38,7 @@ export const TabRouter = createBottomTabNavigator(
           <View style={{ flex: 1, alignItems: 'center' }}>
             <View style={{ flex: 1 }} />
             <Icon
-              name="plane-departure"
+              name="plane"
               size={30}
               color={focused ? ThemeColor : '#615F6B'}
             />
@@ -118,7 +119,7 @@ export const TabRouter = createBottomTabNavigator(
     tabBarComponent: props => <TabbarComponent {...props} />,
     tabBarOptions: {
       labelStyle: { margin: 0, height: 0 },
-      activeTintColor: Theme_color,
+      activeTintColor: ThemeColor,
       showIcon: true,
       showLabel: true,
       style: {
@@ -140,7 +141,7 @@ TabRouter.navigationOptions = ({ navigation }) => {
       return { ...HomeScreen.navigationOptions({ navigation }) }
     }
     case 'TravelListScreen': {
-      return { ...CarListScreen.navigationOptions({ navigation }) }
+      return { ...TravelListScreen.navigationOptions({ navigation }) }
     }
     case 'MessageScreen': {
       return { ...MessageScreen.navigationOptions({ navigation }) }
