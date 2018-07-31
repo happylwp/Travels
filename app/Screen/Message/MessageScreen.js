@@ -1,30 +1,16 @@
 import React, { Component } from 'react'
-import { StyleSheet, View, Image } from 'react-native'
+import { StyleSheet, View, SafeAreaView, Text } from 'react-native'
 import { connect } from 'react-redux'
-import { Button } from '../../components/Button'
-import { NavigationActions } from '../../utils'
 
 @connect()
 class MessageScreen extends Component {
-  static navigationOptions = {
-    tabBarLabel: '消息',
-    tabBarIcon: ({ focused, tintColor }) => (
-      <Image
-        style={[styles.icon, { tintColor: focused ? tintColor : 'gray' }]}
-        source={require('../../images/house.png')}
-      />
-    ),
-  }
-
-  gotoDetail = () => {
-    this.props.dispatch(NavigationActions.navigate({ routeName: 'Detail' }))
-  }
-
   render() {
     return (
-      <View style={styles.container}>
-        <Button text="Goto Detail" onPress={this.gotoDetail} />
-      </View>
+      <SafeAreaView style={styles.container}>
+        <View>
+          <Text>消息</Text>
+        </View>
+      </SafeAreaView>
     )
   }
 }
