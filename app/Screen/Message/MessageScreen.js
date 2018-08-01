@@ -6,8 +6,8 @@ import { BackColor } from '../../utils/GlobleStyle'
 @connect(({ MESSAGE }) => ({ ...MESSAGE }))
 class MessageScreen extends Component {
   static navigationOptions = () => ({
-    title: '',
-  })
+    title: '消息'
+  });
 
   render() {
     return (

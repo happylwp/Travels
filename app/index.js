@@ -22,7 +22,7 @@ const app = dva({
     travelsListModel,
     mineModel,
     detaileModel,
-    SearchModel
+    SearchModel,
   ],
   extraReducers: { router: routerReducer },
   onAction: [routerMiddleware],

@@ -7,7 +7,7 @@ import { BackColor } from '../../utils/GlobleStyle'
 @connect(({ HOME }) => ({ ...HOME }))
 class HomeScreen extends Component {
   static navigationOptions = ({ navigation }) => ({
-    headerTitle: <FakeSearchHeader navigation={navigation}/>
+    headerTitle: <FakeSearchHeader navigation={navigation} />,
   })
 
   render() {

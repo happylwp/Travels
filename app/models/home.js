@@ -1,15 +1,9 @@
 export default {
   namespace: 'HOME',
-  state: {
-  },
-  reducers: {
-
-  },
-  effects: {
-
-  },
+  state: {},
+  reducers: {},
+  effects: {},
   subscriptions: {
-    setup() {
-    },
+    setup() {},
   },
 }

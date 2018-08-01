@@ -1,15 +1,9 @@
 export default {
   namespace: 'MESSAGE',
-  state: {
-  },
-  reducers: {
-
-  },
-  effects: {
-
-  },
+  state: {},
+  reducers: {},
+  effects: {},
   subscriptions: {
-    setup() {
-    },
+    setup() {},
   },
 }

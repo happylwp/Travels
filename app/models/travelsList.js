@@ -1,15 +1,9 @@
 export default {
   namespace: 'TRAVELSLIST',
-  state: {
-  },
-  reducers: {
-
-  },
-  effects: {
-
-  },
+  state: {},
+  reducers: {},
+  effects: {},
   subscriptions: {
-    setup() {
-    },
+    setup() {},
   },
 }

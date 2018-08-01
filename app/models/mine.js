@@ -1,15 +1,9 @@
 export default {
   namespace: 'MINE',
-  state: {
-  },
-  reducers: {
-
-  },
-  effects: {
-
-  },
+  state: {},
+  reducers: {},
+  effects: {},
   subscriptions: {
-    setup() {
-    },
+    setup() {},
   },
 }
