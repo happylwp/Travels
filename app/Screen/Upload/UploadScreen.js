@@ -3,7 +3,7 @@ import { StyleSheet, View, SafeAreaView, Text } from 'react-native'
 import { connect } from 'react-redux'
 import { BackColor } from '../../utils/GlobleStyle'
 
-@connect()
+@connect(({ ADDTRAVELS }) => ({ ...ADDTRAVELS }))
 class UploadScreen extends Component {
   static navigationOptions = () => ({
     title: '',

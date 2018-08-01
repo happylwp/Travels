@@ -3,7 +3,7 @@ import { View, SafeAreaView, Text, StyleSheet } from 'react-native'
 import { connect } from 'react-redux'
 import { BackColor } from '../../utils/GlobleStyle'
 
-@connect()
+@connect(({ TRAVELSLIST }) => ({ ...TRAVELSLIST }))
 class TravelsListScreen extends PureComponent {
   static navigationOptions = () => ({
     title: '',

@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react'
+import React, { Component } from 'react'
 import {
   Dimensions,
   SafeAreaView,
@@ -7,11 +7,13 @@ import {
   View,
 } from 'react-native'
 import Icon from 'react-native-vector-icons/FontAwesome'
+import { connect } from 'react-redux'
 import { ThemeColor } from './utils/GlobleStyle'
 
 const { width } = Dimensions.get('window')
 
-class TabbarComponent extends PureComponent {
+@connect()
+class TabbarComponent extends Component {
   render() {
     const { navigation } = this.props
     const homeScreenFocused = navigation.state.index === 0 // false;//childNav.HomeScreen.isFocused();

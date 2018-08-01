@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 import { StyleSheet, View, SafeAreaView, Text } from 'react-native'
 import { connect } from 'react-redux'
+import FakeSearchHeader from './component/FakeSearchHeader'
 import { BackColor } from '../../utils/GlobleStyle'
 
-@connect()
+@connect(({ HOME }) => ({ ...HOME }))
 class HomeScreen extends Component {
-  static navigationOptions = () => ({
-    title: null,
+  static navigationOptions = ({ navigation }) => ({
+    headerTitle: <FakeSearchHeader navigation={navigation}/>
   })
 
   render() {

@@ -3,7 +3,7 @@ import { StyleSheet, View, SafeAreaView, Text } from 'react-native'
 import { connect } from 'react-redux'
 import { BackColor } from '../../utils/GlobleStyle'
 
-@connect()
+@connect(({ MINE }) => ({ ...MINE }))
 class MineScreen extends Component {
   static navigationOptions = () => ({
     title: '',
